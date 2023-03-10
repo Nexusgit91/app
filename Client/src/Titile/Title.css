@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.animated-title {
+  font-size: 4rem;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+}
+
+.character-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
